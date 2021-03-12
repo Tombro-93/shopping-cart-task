@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <title>The Grocer | Shopping cart</title>
+
+  <body>
+    <div class="container">
+      <h1>The Grocers</h1>
+      <div>
+        <ul>
+          <li>
+            <a class="add-to-cart" href="#" data-name="Apple" data-price="1.50"
+              >Apple £1.50</a
+            >
+          </li>
+          <li>
+            <a class="add-to-cart" href="#" data-name="Pear" data-price="1.75"
+              >Pear £1.75</a
+            >
+          </li>
+          <li>
+            <a class="add-to-cart" href="#" data-name="Plum" data-price="2.50"
+              >Plum £2.50</a
+            >
+          </li>
+          <li>
+            <a
+              class="add-to-cart"
+              href="#"
+              data-name="Strawberries"
+              data-price="5"
+              >Strawberries £5</a
+            >
+          </li>
+          <li>
+            <a class="add-to-cart" href="#" data-name="Mango" data-price="3"
+              >Mango £3</a
+            >
+          </li>
+          <li>
+            <a class="add-to-cart" href="#" data-name="Banana" data-price="1"
+              >Banana £1</a
+            >
+          </li>
+          <li>
+            <a class="add-to-cart" href="#" data-name="Oranges" data-price="2"
+              >Oranges £2</a
+            >
+          </li>
+        </ul>
+      </div>
+      <h1>Shopping Cart</h1>
+      <div>
+        <ul id="show-cart">
+          <!-- -->
+        </ul>
+        <div class="total">Total Cart: £<span id="total-cart"></span></div>
+        <button id="clear-cart">Clear cart</button>
+      </div>
+
+      <script src="store.js" async></script>
+    </div>
+  </body>
+</html>
