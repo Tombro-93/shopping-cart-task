@@ -1,7 +1,5 @@
 //JQuery
 
-
-
 $(".add-to-cart").click(function(event){
   event.preventDefault();
   var name = $(this).attr("data-name");
@@ -114,15 +112,19 @@ function countCart(){
 function listCart(){
   var cartCopy = [];
   for (var i in cart) {
-    var item = cart [i];
+    var item = cart[i];
     var itemCopy= {};
     for (var p in item) {
+      console.log(item[p]);
       itemCopy[p] = item[p];
+      console.log(itemCopy[p]);
     }
     cartCopy.push(itemCopy);
   }
   return cartCopy;
 }
+
+console.log(itemCopy);
 
 //Save cart when you leave and comeback
 
