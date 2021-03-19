@@ -11,15 +11,20 @@ body {
 }
 
 .container {
-  width: 750px;
-  height: 800px;
+  width: 800px;
   margin: 80px auto;
   background: #ffffff;
   box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
+}
 
+.products {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.product-image img {
+  width: 100%;
 }
 
 h1 {
@@ -35,12 +40,6 @@ ul {
   list-style: none;
 }
 
-button:hover {
-  transition: 1s;
-  background-color: powderblue;
-  color: orange;
-}
-
 .total {
   height: 60px;
   border-top: 1px solid #e1e8ee;
@@ -51,7 +50,7 @@ button:hover {
   font-weight: 400;
 }
 
-button {
+#clear-cart {
   margin: 30px;
   padding: 1rem;
   background-color: orange;
@@ -61,4 +60,10 @@ button {
   border: none;
   height: 3rem;
   width: 10rem;
+}
+
+#clear-cart:hover {
+  transition: 1s;
+  background-color: powderblue;
+  color: orange;
 }
