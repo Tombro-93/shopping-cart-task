@@ -1,4 +1,4 @@
-//JQuery
+//JQuery//
 
 $(".add-to-cart").click(function(event){
   event.preventDefault();
