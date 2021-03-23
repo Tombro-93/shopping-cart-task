@@ -20,6 +20,7 @@ body {
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 20px;
+  background-color: #00887a;
   border-bottom: 1px solid #00887a;
 }
 
@@ -33,7 +34,7 @@ body {
 
 .topnav {
   width: 60%;
-  color: #00887a;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -44,14 +45,21 @@ body {
 h1 {
   height: 60px;
   padding: 20px 30px;
-  color: #5e6977;
-  font-size: 25px;
+  margin-top: 0px;
+  color: #00887a;
+  font-size: 40px;
   font-weight: 400;
   text-align: center;
 }
 
 ul {
   list-style: none;
+}
+
+.container {
+  background-image: url(/Users/Tom/Desktop/Projects/Shopping/background-orange-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .products {
@@ -66,7 +74,6 @@ ul {
   flex-grow: 1;
   flex-basis: 23%;
   justify-content: space-evenly;
-  background-color: #fff;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -77,11 +84,18 @@ ul {
 .product-image img {
   max-width: 100%;
   border-radius: 0.5rem;
-  box-shadow: 4px 4px 10px #77a6f7;
+}
+
+.product-header {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .product-info {
   margin: 12%;
+  text-align: center;
+  font-size: 15px;
 }
 
 .add-to-cart {
